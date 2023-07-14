@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body{
+    background: url(https://img.freepik.com/vetores-premium/fundo-de-tecnologia-em-efeito-poli_23-2148453989.jpg);
+    
+    
+}
+
+.body-principal{
+    display: flex;
+    width: 100%;
+    
+}
+
+aside{
+    background-color: rgba(86, 119, 148, 0.466);
+    
+}
+
+.menu{
+    width: 300px;
+    min-height: 100vh;
+    text-align: center;
+    color: azure;
+    
+}
+
+.redes-sociais{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.icones-redes:hover{
+    width: 54px;
+    transition: 0.5s;
+
+}
+
+.redes-sociais:active{
+    color: azure;
+}
+.figure{
+    border-radius: 50%;
+    margin: 10px;
+    width: 70%; 
+    
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    margin: 5px;  
+    width: calc(100% -300px);
+    
+}
+
+.info{
+    background-color:rgba(86, 119, 148, 0.466);
+    width: 95%;
+    line-height: 40px;
+    color: white;
+    padding: 20px;
+}
+
+.info ul li{
+    list-style: none;
+}
+
+.progress{
+    color: white;
+    background-color:rgba(86, 119, 148, 0.484);
+    width: 95%;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.inspiracoes{
+    color: white;
+    background-color:rgba(86, 119, 148, 0.489);
+    width: 95%;
+    line-height: 30px;
+    padding: 30px;
+}
+
+.titulo-inspiracoes{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 7%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.card-inspiracoes{
+    max-width: 300px;
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    
+}
+
+.card-inspiracoes:hover{
+    transform: translateY(-10px);
+}
+
+.card-inspiracoes img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+@media screen and (max-width:1023px){
+    aside{
+        width: 100%;
+        
+    }
+    .menu{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 0;
+    }    
+    .figure{
+        width: 60%;
+    }
+}
